@@ -1,0 +1,107 @@
+# Git & GitHub Assignment — Command Documentation
+
+## 1. Repository Initialization
+
+**`git init -b main`**
+
+Initializes a new Git repository and creates the main branch.
+
+## 2. Staging and Committing
+
+**`git add index.html about.html`**
+
+Stages the specified HTML files for committing.
+
+**`git add index.html`**
+
+Stages changes made to index.html.
+
+**`git commit -m "Initial project setup"`**
+
+Creates the first commit with the project files.
+
+**`git commit -m "Update homepage content"`**
+
+Records changes made to the homepage.
+
+**`git commit -m "Add feature section"`**
+
+Records the changes made on the feature branch.
+
+## 3. Branching and Merging
+
+**`git branch feature`**
+
+Creates a new branch named feature.
+
+**`git switch feature`**
+
+Switches the working branch to feature.
+
+**`git switch main`**
+
+Switches back to the main branch.
+
+**`git merge feature`**
+
+Merges the feature branch into the main branch.
+
+## 4. Viewing Repository History
+
+**`git log --oneline --graph --decorate --all`**
+
+Displays commit history in a compact graphical format, including all branches.
+
+**`git status`**
+
+Displays the current repository state and working-tree changes.
+
+**`git status --short --ignored`**
+
+Displays changes in short format, including ignored files.
+
+## 5. Ignoring Files
+
+**`git add .gitignore`**
+
+Stages the .gitignore file.
+
+**`git commit -m "Add gitignore configuration"`**
+
+Records the ignore-file configuration.
+
+## 6. Undoing Changes
+
+**`git revert --no-edit HEAD`**
+
+Creates a new commit that reverses the changes introduced by the latest commit.
+
+## 7. GitHub Integration
+
+**`git remote add origin <repository-url>`**
+
+Connects the local repository to a remote GitHub repository.
+
+**`git remote set-url origin <repository-url>`**
+
+Updates the URL of an existing remote repository.
+
+**`git remote -v`**
+
+Displays the configured remote repository URLs.
+
+**`git branch -M main`**
+
+Renames the current branch to main.
+
+**`git push -u origin main`**
+
+Pushes the main branch to GitHub and establishes upstream tracking.
+
+**`git push -u origin feature`**
+
+Pushes the feature branch to GitHub and establishes upstream tracking.
+
+**`git push origin main`**
+
+Pushes subsequent main branch changes to GitHub.
